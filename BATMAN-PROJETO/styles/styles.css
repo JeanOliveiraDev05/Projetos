@@ -8,6 +8,7 @@
     text-decoration: none;
 }
 
+
 header {
     height: 90px;
     display: flex;
@@ -135,6 +136,7 @@ button:hover {
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 0 20px 10px;
+    margin: 30px 0 0 0;
     color: #fff;
     font-size: 17px;
     font-family: 'Kdam Thmor Pro', sans-serif ;
@@ -172,6 +174,33 @@ button:hover {
 
 }
 
+.banner-4 {
+    background-image: url('/midias/charada.jpg');
+    transition: 2s;
+}
+
+.banner-4:hover {
+    background-image: url('/midias/Paul_Dano.webp');
+}
+
+.banner-5{
+    background-image: url('/midias/Alfred.webp');
+    transition: 2s;
+}
+
+.banner-5:hover {
+    background-image: url('/midias/andyserkis.webp');
+}
+
+.banner-6{
+    background-image: url('/midias/pinguim.jpg');
+    transition: 2s;
+}
+
+.banner-6:hover {
+    background-image: url('/midias/ColinFarrel.webp');
+}
+
 footer {
     height: 300px;
     margin-top: 50px;
@@ -192,21 +221,29 @@ span {
 
 .footer-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    
 }
 
-@media(max-width: 768px) {
+@media(max-width: 957px) {
     .footer-navigation {
-        display: block;
+        display: flex;
+        justify-items:center;
+        flex-direction: row;
+        align-items: center;
+        
     }
+    
 
     nav {
         display: none;
     }
 
     #banner {
-        background-position: 30%;
+        background-position: 30% 30%;
+        background-size:contain;
+        background-repeat: no-repeat;
     }
 
     #trailler-container {
@@ -248,3 +285,40 @@ span {
         margin-top: 150px;
     }
 }
+
+@media(max-width: 587px) {
+    #banner {
+        background-image: url('/midias/batman-poster.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center; 
+        
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cards-contents {
+        width: 85%;
+    }
+
+    .card {
+        height: 400px;
+    }
+    
+
+    
+    
+}
+
