@@ -241,9 +241,11 @@ span {
     }
 
     #banner {
-        background-position: 30% 30%;
-        background-size:contain;
+        background-position: 40% 40%;
+        background-size: contain;
         background-repeat: no-repeat;
+        
+
     }
 
     #trailler-container {
@@ -292,6 +294,7 @@ span {
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
+    
     }
 
     .footer-list {
@@ -311,14 +314,6 @@ span {
 
     .cards-contents {
         width: 85%;
-    }
-
-    .card {
-        height: 400px;
-    }
-    
-
-    
-    
+    }    
 }
 
