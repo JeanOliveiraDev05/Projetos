@@ -6,6 +6,7 @@
     background-color: black;
     list-style: none;
     text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 
@@ -38,7 +39,6 @@ li {
     cursor: pointer;
     font-size: 19px;
     transition: 0.5s;
-    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 li:hover {
@@ -46,7 +46,7 @@ li:hover {
 }
 
 #banner {
-    background-image: url('https://www.comunidadedasnacoes.com.br/wp-content/uploads/2022/04/batman.png');
+    background-image: url('/midias/batmanbanner03.jpg');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -82,7 +82,6 @@ li:hover {
 .description {
     color: #fff;
     font-size: 19px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
     width: 70%;   
 }
 
@@ -131,7 +130,7 @@ button:hover {
     background-position: 50% 50%;
     border-radius: 5px;
     cursor: pointer;
-    transition: 1s;
+    transition: 1.5s;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -139,65 +138,64 @@ button:hover {
     margin: 30px 0 0 0;
     color: #fff;
     font-size: 17px;
-    font-family: 'Kdam Thmor Pro', sans-serif ;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-.banner-1 {
+.image-1 {
     background-image: url('https://i.pinimg.com/564x/20/8a/1d/208a1d04758429cda9cf883fc67af036.jpg');
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.banner-1:hover {
+.image-1:hover {
     background-image: url('https://i.pinimg.com/564x/c0/58/c4/c058c4631cdea89665bba8d9e4869dc6.jpg');
 }
 
-.banner-2 {
+.image-2 {
     background-image: url('https://i.pinimg.com/564x/74/6c/bc/746cbc3388c91630d095a811a49df1e2.jpg');
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.banner-2:hover{
+.image-2:hover{
     background-image: url('https://i.pinimg.com/564x/0b/c9/69/0bc969390aacc04145ef35de77acb7be.jpg');
 }
 
-.banner-3 {
+.image-3 {
     background-image: url('https://i.pinimg.com/564x/55/ba/f3/55baf3b7aa6588ce8a8fcd17e5b9fcfb.jpg');
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.banner-3:hover {
+.image-3:hover {
     background-image: url('https://i.pinimg.com/564x/74/a8/f6/74a8f61ff3624aed8e69d78dfb0abf5b.jpg');
 
 }
 
-.banner-4 {
+.image-4 {
     background-image: url('/midias/charada.jpg');
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.banner-4:hover {
+.image-4:hover {
     background-image: url('/midias/Paul_Dano.webp');
 }
 
-.banner-5{
+.image-5{
     background-image: url('/midias/Alfred.webp');
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.banner-5:hover {
+.image-5:hover {
     background-image: url('/midias/andyserkis.webp');
 }
 
-.banner-6{
+.image-6{
     background-image: url('/midias/pinguim.jpg');
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.banner-6:hover {
+.image-6:hover {
     background-image: url('/midias/ColinFarrel.webp');
 }
 
@@ -212,7 +210,6 @@ footer {
 
 span {
     color: #fff;
-    font-family:'Kdam Thmor Pro', sans-serif ;
 }
 
 .footer-navigation {
@@ -235,10 +232,6 @@ span {
         
     }
     
-
-    nav {
-        display: none;
-    }
 
     #banner {
         background-position: 40% 40%;
@@ -283,18 +276,26 @@ span {
     }
 
     .cards-contents {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 150px;
+    }
+
+    .card {
+        width: 100%;
+
     }
 }
 
 @media(max-width: 587px) {
     #banner {
-        background-image: url('/midias/batman-poster.jpg');
+        background-image: url('/midias/batmanbannermobile.jpg');
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
-    
+    }
+
+    nav {
+        display: none;
     }
 
     .footer-list {
@@ -314,6 +315,11 @@ span {
 
     .cards-contents {
         width: 85%;
+        grid-template-columns: 1fr;
     }    
-}
 
+    .card {
+        height: 600px;
+    }
+
+}

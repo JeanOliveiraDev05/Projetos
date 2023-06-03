@@ -51,20 +51,15 @@ li:hover {
 }
 
 
-.titulo { 
-    display: flex;
-    justify-items: center;
-    margin: 20px;
-    align-items: center;
-    flex-direction: column;
-}
 h1 {
     color: aliceblue;
     font-size: 30px;
     font-weight: bolder;
     font-family: 'Kdam Thmor Pro', sans-serif;
     transition: .8s;
-    margin-top: 40px;
+    animation: animacao 2.5s;
+    margin-top: 50px;
+    text-align: center;
 }
 h1:hover {
     color: #d21617;
@@ -74,21 +69,22 @@ h1:hover {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    border: none; 
-   margin-top: 100px;
-   animation: animacao;
-   animation-duration: 2s;   
+   margin-top: 50px;
+   animation: animacao 2s;  
 }
 @keyframes animacao{ 
-    from {
-        
-        margin-top: 600px;
-    }
-    to{
-        
-        margin-top: 100px;
-
+    0% {
+        margin-top: 500px;
     }
 
+    50%{
+        margin-top: 25px;
+    }
+    
+
+    100%{
+        margin-top: 50px;
+    }
     
 }
 
@@ -107,15 +103,15 @@ h1:hover {
 }
 
 .cards {    
-    width: 85%;
-    height: 320px;
+    width: 90%;
+    height: 35%;
     border-radius: 7px;  
-    margin: 30px; 
+    margin: 20px; 
     cursor: pointer;
-    transition: 1.5s;
+    transition: 1s;
 }
 .cards:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     
 }
 
@@ -155,12 +151,13 @@ span {
     #mestra {
         display: flex;
         flex-direction: column;
+        margin-top: 50px
     }
 
 
     .cards {    
-        width: 70%;
-        height: 10%p;
+        width: 80%;
+        height: 30%;
 
     }  
 

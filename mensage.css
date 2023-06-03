@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#logo {
+    height: auto;
+    width: 150px;
+}
+
+#mestra {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    margin-top: 100px;
+}
+
+
+.text {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    animation: nocontent 1.5s;
+    
+}
+
+@keyframes nocontent {
+    0% {
+        margin-top: 500px;
+    }
+
+    50% {
+        margin-top: -40px;
+    }
+
+    100% {
+        margin-top: 10px;
+        
+    }
+}
+
+.link {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    margin: 100px auto;
+    animation: nolink 2.5s;
+}
+
+.link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes nolink {
+    from {
+        height: 40px;
+        width: 150px;
+        font-size: 8px;
+    }
+
+    to {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+footer {
+    height: 300px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+span {
+    color: #fff;
+    margin: 10px;
+}
+
+
+@media(max-width: 662px) {
+    #mestra {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+
+    .link {
+        width: 70%;
+    }
+}
+
+@media(max-width: 588px) {
+    .text {
+        font-size: 25px;
+        animation: nocontent2 1.5s;
+    }
+
+    @keyframes nocontent2 {
+
+        0% {
+            margin-top: 500px;
+            
+        }
+
+        50% {
+            margin-top: -40px;
+        }
+
+        100% {
+            margin-top: 10px;
+        }
+    }
+
+    .link {
+        animation: nolink2 2.5s;
+    }
+
+    @keyframes nolink2 {
+
+        0% {
+            margin-top: 500px;
+            width: 50px;
+        }
+
+        50% {
+            margin-top: 80px;
+        }
+
+        100% {
+            margin-top: 100px;
+        }
+    }
+
+}

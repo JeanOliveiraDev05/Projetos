@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap') ;
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    height: auto;
+    width: 150px;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: .8s;
+    margin-top: 50px;
+    animation: noh1 2.0s;
+}
+@keyframes noh1 {
+    0% {
+        margin-top: 500px;
+        font-size: 10px;
+    }
+
+    50%{
+        margin-top: 0px;
+        font-size: 30px;
+    }
+    
+
+    100%{
+        margin-top: 50px;
+    
+    }
+}
+
+h1:hover {
+    color: #d21617;
+}
+
+#mestra{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 50px;
+    animation: namestra 2.3s;    
+}
+
+@keyframes namestra {
+    0% {
+        margin-top: 500px;
+    }
+
+    50%{
+        margin-top: 25px;
+    }
+    
+
+    100%{
+        margin-top: 50px;
+    }
+    
+}
+
+p{ 
+    font-weight: bold;
+    font-size: 40px;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+label {
+    font-weight: 600;
+}
+input {
+    background-color: aliceblue;
+    width: 400px;
+    height: 40px;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 7px;
+    font-weight: 600;
+    text-align: center;
+    animation: noform 2.7s;
+}
+
+@keyframes noform {
+    0% {
+        margin-top: 500px;
+        width: 10px;
+        height: 10px;
+    }
+
+    50%{
+        margin-top: 5px;
+        width: 200px;
+        height: 20px;
+        
+    }
+    
+
+    100%{
+        margin-top: 10px;
+    }
+}
+
+textarea {
+    background-color: aliceblue;
+    height: 60px;
+    width: 400px;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 7px;
+    font-weight: 700;
+    border: none;
+    animation: noform 2.7s;
+}
+
+button {
+    width: 400px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    animation: nobutton 2.5s;  
+}
+@keyframes nobutton {
+    0% {
+        margin-top: 500px;
+        width: 10px;
+    }
+
+    50%{
+        margin-top: 10px;
+        width: 200px;
+        
+    }
+    
+
+    100%{
+        margin-top: 25px;
+    }
+
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    height: 300px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;     
+}
+
+span {
+    color: #fff;
+    font-family:'Kdam Thmor Pro', sans-serif ;
+    margin: 10px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+@media(max-width: 662px) {
+#mestra {
+    flex-direction: column;
+}
+
+nav {
+    display: none;
+}
+
+li {
+    border-left: 3px solid aliceblue;
+    padding-left: 4px;
+
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+@media(max-width: 588px) {
+    .footer-list{
+        flex-direction: column;
+    }
+
+    li {
+        border: none;
+    }
+    input {
+        width: 70%;
+        height: 50px;
+    }
+
+    textarea{
+        width: 70%;
+        height: 70px;
+    }
+
+    button{
+        width: 70%;
+    }
+}
+
+@media(max-width: 280px) {
+    h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
