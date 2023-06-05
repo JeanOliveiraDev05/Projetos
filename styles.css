@@ -46,7 +46,7 @@ li:hover {
 }
 
 #banner {
-    background-image: url('/midias/batmanbanner03.jpg');
+    background-image: url('../midias/batmanbanner03.jpg');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -173,30 +173,30 @@ button:hover {
 }
 
 .image-4 {
-    background-image: url('/midias/charada.jpg');
+    background-image: url('../midias/charada.jpg');
     transition: 1.5s;
 }
 
 .image-4:hover {
-    background-image: url('/midias/Paul_Dano.webp');
+    background-image: url('../midias/Paul_Dano.webp');
 }
 
 .image-5{
-    background-image: url('/midias/Alfred.webp');
+    background-image: url('../midias/Alfred.webp');
     transition: 1.5s;
 }
 
 .image-5:hover {
-    background-image: url('/midias/andyserkis.webp');
+    background-image: url('../midias/andyserkis.webp');
 }
 
 .image-6{
-    background-image: url('/midias/pinguim.jpg');
+    background-image: url('../midias/pinguim.jpg');
     transition: 1.5s;
 }
 
 .image-6:hover {
-    background-image: url('/midias/ColinFarrel.webp');
+    background-image: url('../midias/ColinFarrel.webp');
 }
 
 footer {
@@ -288,7 +288,7 @@ span {
 
 @media(max-width: 587px) {
     #banner {
-        background-image: url('/midias/batmanbannermobile.jpg');
+        background-image: url('../midias/batmanbannermobile.jpg');
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
